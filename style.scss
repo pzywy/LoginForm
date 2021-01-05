@@ -46,6 +46,10 @@
         height:$userImgShapeSize;
         border-radius:$userImgShapeSize;
         background:$secoundHightLight;
+        &:hover
+        {
+            background: rgba($secoundHightLight,0.9);
+        }
     }
     .userImgShape::after
     {
@@ -58,9 +62,6 @@
         left:-$userImgShapeSize/4;
         border-radius:$userImgShapeSize $userImgShapeSize 0 0;
     }
-
-
-
     .form
     {
         display:flex;

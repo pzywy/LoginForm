@@ -46,6 +46,10 @@ body .userImgShape {
   background: #45062E;
 }
 
+body .userImgShape:hover {
+  background: rgba(69, 6, 46, 0.9);
+}
+
 body .userImgShape::after {
   content: "";
   width: 150px;
