@@ -9,7 +9,6 @@ document.querySelector('.FomrSubmitButton').addEventListener("transitionstart", 
     
     function makeStripes()
     {
-         
         textStripes="";
         for(i=0;i<50;i++)
         {

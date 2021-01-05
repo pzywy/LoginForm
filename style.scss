@@ -37,6 +37,9 @@
         flex:1;
     }
     $userImgShapeSize:100px;
+    @mixin borderAnimePeople {
+        border:$mainColor ridge 5px;
+    }
     .userImgShape
     {
         position: relative;
@@ -44,22 +47,26 @@
         width:$userImgShapeSize;
         height:$userImgShapeSize;
         border-radius:$userImgShapeSize;
-        background:$secoundHightLight;
+        background:$mainColor;
+        transition: background 2s;
         &:hover
         {
-            background: rgba($secoundHightLight,0.9);
+            background:$mainHightlight;
         }
+        @include borderAnimePeople();
     }
     .userImgShape::after
     {
         content:"";
         width:$userImgShapeSize*1.5;
         height:$userImgShapeSize/2.5;
-        background:$secoundHightLight;
+        background:$mainColor;
         position:absolute;
         top:$userImgShapeSize*1.2;
         left:-$userImgShapeSize/4;
         border-radius:$userImgShapeSize $userImgShapeSize 0 0;
+        @include borderAnimePeople();
+        
     }
     .form
     {
