@@ -53,7 +53,7 @@ body .userImgShape:hover {
 body .userImgShape::after {
   content: "";
   width: 150px;
-  height: 33.33333px;
+  height: 40px;
   background: #45062E;
   position: absolute;
   top: 120px;
@@ -91,25 +91,25 @@ body .form form {
 
 body .form form label {
   font-size: 1.3em;
-  background: rgba(69, 6, 46, 0.5);
+  background: rgba(69, 6, 46, 0.9);
   border-radius: 10em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: .0 .3em 0 .3em;
+  padding: .0 .5em 0 .5em;
   margin: 0 auto 0 auto;
 }
 
 body .form form label:hover {
-  background: rgba(69, 6, 46, 0.8);
+  background: #45062e;
 }
 
 body .form form input {
   border-style: unset;
   color: #D9DBF1;
   background: rgba(69, 6, 46, 0.9);
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-          box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 2px 2px 5px 0px #000000, inset 1px 1px 15px 0px #000000, 2px 2px 15px 5px rgba(0, 0, 0, 0);
+          box-shadow: 2px 2px 5px 0px #000000, inset 1px 1px 15px 0px #000000, 2px 2px 15px 5px rgba(0, 0, 0, 0);
   border-radius: 2em;
   padding: .3em;
 }
@@ -120,13 +120,17 @@ body .form form input:last-child {
   border-radius: 4em;
   margin: 1em auto 0 auto;
   font-size: 1.5em;
+  -webkit-transition: -webkit-transform .7s ease-out;
+  transition: -webkit-transform .7s ease-out;
+  transition: transform .7s ease-out;
+  transition: transform .7s ease-out, -webkit-transform .7s ease-out;
+  -webkit-box-shadow: 0px 0px 5px 0px #000000, inset 0px 0px 15px 0px #000000, 0px 0px 15px 5px rgba(0, 0, 0, 0);
+          box-shadow: 0px 0px 5px 0px #000000, inset 0px 0px 15px 0px #000000, 0px 0px 15px 5px rgba(0, 0, 0, 0);
 }
 
 body .form form input:last-child:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: ease-in-out .3s;
-  transition: ease-in-out .3s;
+  -webkit-transform: scale(1.2) rotate(720deg);
+          transform: scale(1.2) rotate(720deg);
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
