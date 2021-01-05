@@ -1,0 +1,15 @@
+
+=border-radius($radius)
+    color: black
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+    border-radius: $radius
+    
+$mainColor: red
+
+body
+    background: $mainColor
+    div
+        background: white
+        +border-radius(10px)

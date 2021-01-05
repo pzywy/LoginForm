@@ -1,0 +1,10 @@
+body {
+  background: red;
+}
+
+body div {
+  background: white;
+  color: black;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
