@@ -17,8 +17,7 @@ body .container {
   background: rgba(62, 124, 177, 0.8);
   border-radius: 0.5em;
   margin: auto;
-  margin-top: 10%;
-  height: 40em;
+  height: 45em;
   width: 30em;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
           box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -90,7 +89,10 @@ body .form form {
 }
 
 body .form form label {
-  font-size: 1.3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1em;
   background: rgba(69, 6, 46, 0.9);
   border-radius: 10em;
   width: -webkit-fit-content;
@@ -105,32 +107,38 @@ body .form form label:hover {
 }
 
 body .form form input {
+  text-align: center;
   border-style: unset;
   color: #D9DBF1;
   background: rgba(69, 6, 46, 0.9);
   -webkit-box-shadow: 2px 2px 5px 0px #000000, inset 1px 1px 15px 0px #000000, 2px 2px 15px 5px rgba(0, 0, 0, 0);
           box-shadow: 2px 2px 5px 0px #000000, inset 1px 1px 15px 0px #000000, 2px 2px 15px 5px rgba(0, 0, 0, 0);
   border-radius: 2em;
-  padding: .3em;
+  padding: .2em;
 }
 
 body .form form input:last-child {
+  padding: 0;
   height: 4em;
   width: 4em;
   border-radius: 4em;
   margin: 1em auto 0 auto;
   font-size: 1.5em;
-  -webkit-transition: -webkit-transform .7s ease-out;
-  transition: -webkit-transform .7s ease-out;
-  transition: transform .7s ease-out;
-  transition: transform .7s ease-out, -webkit-transform .7s ease-out;
+  -webkit-transition: letterSpacing .3s ease-in-out, -webkit-transform .7s ease-out;
+  transition: letterSpacing .3s ease-in-out, -webkit-transform .7s ease-out;
+  transition: transform .7s ease-out, letterSpacing .3s ease-in-out;
+  transition: transform .7s ease-out, letterSpacing .3s ease-in-out, -webkit-transform .7s ease-out;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
   -webkit-box-shadow: 0px 0px 5px 0px #000000, inset 0px 0px 15px 0px #000000, 0px 0px 15px 5px rgba(0, 0, 0, 0);
           box-shadow: 0px 0px 5px 0px #000000, inset 0px 0px 15px 0px #000000, 0px 0px 15px 5px rgba(0, 0, 0, 0);
 }
 
 body .form form input:last-child:hover {
-  -webkit-transform: scale(1.2) rotate(720deg);
-          transform: scale(1.2) rotate(720deg);
+  -webkit-transition-delay: unset;
+          transition-delay: unset;
+  -webkit-transform: scale(1.2) rotate(360deg);
+          transform: scale(1.2) rotate(360deg);
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
