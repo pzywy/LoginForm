@@ -66,5 +66,52 @@
     {
         display:flex;
         flex:2;
+        margin:1em;
+
+        form
+        {
+            flex:1;
+            display:flex;
+            padding:1em;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            label
+            {
+                font-size: 1.3em;
+                background:rgba($secoundHightLight,0.5);
+                border-radius: 10em;
+                width:fit-content;
+                padding:.0 .3em 0 .3em;
+                margin:0 auto 0 auto;
+                &:hover
+                {
+                    background:rgba($secoundHightLight,0.8);
+                }
+            }
+            input
+            {
+                border-style: unset;
+                color:$fontColor;
+                background:rgba($secoundHightLight,0.9);
+                box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                border-radius: 2em;
+                padding: .3em;
+                &:last-child
+                {
+                    height: 4em;
+                    width: 4em;
+                    border-radius: 4em;
+                    margin:1em auto 0 auto;
+                    font-size: 1.5em;
+                    &:hover
+                    {
+                        transform:scale(1.1);
+                        transition:ease-in-out .3s;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
   }
