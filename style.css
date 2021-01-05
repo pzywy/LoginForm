@@ -1,10 +1,68 @@
 body {
-  background: red;
+  margin: 1em;
+  padding: 1em;
+  background: #054A91;
+  color: #D9DBF1;
+  font-size: 16px;
 }
 
-body div {
-  background: white;
-  color: black;
-  border-radius: 10px;
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(62, 124, 177, 0.8);
+  border-radius: 0.5em;
+  margin: auto;
+  margin-top: 10%;
+  height: 40em;
+  width: 30em;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+          box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+body .container:hover {
+  background: #3E7CB1;
+}
+
+body .userImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .userImgShape {
+  position: relative;
+  margin: 2em auto 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background: #45062E;
+}
+
+body .userImgShape::after {
+  content: "";
+  width: 150px;
+  height: 33.33333px;
+  background: #45062E;
+  position: absolute;
+  top: 120px;
+  left: -25px;
+  border-radius: 100px 100px 0 0;
+}
+
+body .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 /*# sourceMappingURL=style.css.map */
