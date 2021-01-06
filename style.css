@@ -133,8 +133,8 @@ body .form form input:last-child {
   transition: letterSpacing .3s ease-in-out, -webkit-transform .7s ease-out;
   transition: transform .7s ease-out, letterSpacing .3s ease-in-out;
   transition: transform .7s ease-out, letterSpacing .3s ease-in-out, -webkit-transform .7s ease-out;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
   -webkit-box-shadow: unset;
           box-shadow: unset;
 }
