@@ -129,10 +129,10 @@ body .form form input:last-child {
   border-radius: 4em;
   margin: 1em auto 0 auto;
   font-size: 1.5em;
-  -webkit-transition: letterSpacing .3s ease-in-out, -webkit-transform .7s ease-out;
-  transition: letterSpacing .3s ease-in-out, -webkit-transform .7s ease-out;
-  transition: transform .7s ease-out, letterSpacing .3s ease-in-out;
-  transition: transform .7s ease-out, letterSpacing .3s ease-in-out, -webkit-transform .7s ease-out;
+  -webkit-transition: -webkit-transform .7s ease-out;
+  transition: -webkit-transform .7s ease-out;
+  transition: transform .7s ease-out;
+  transition: transform .7s ease-out, -webkit-transform .7s ease-out;
   -webkit-transition-delay: .2s;
           transition-delay: .2s;
   -webkit-box-shadow: unset;
