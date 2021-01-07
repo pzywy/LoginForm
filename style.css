@@ -1,8 +1,8 @@
 body {
   margin: 1em;
   padding: 1em;
-  background: #4a8374;
-  color: #BDFFFD;
+  background: #cfc0bd;
+  color: #e0e0ce;
   font-size: 16px;
 }
 
@@ -14,7 +14,7 @@ body .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: rgba(124, 255, 196, 0.8);
+  background: rgba(235, 94, 40, 0.95);
   border-radius: 0.5em;
   margin: auto;
   height: 50em;
@@ -24,7 +24,7 @@ body .container {
 }
 
 body .container:hover {
-  background: #7CFFC4;
+  background: #eb5e28;
 }
 
 body .userImg {
@@ -43,26 +43,26 @@ body .userImgShape {
   width: 100px;
   height: 100px;
   border-radius: 100px;
-  background: #4a8374;
+  background: #32292f;
   -webkit-transition: background 2s;
   transition: background 2s;
-  border: #BDFFFD inset 5px;
+  border: #e0e0ce inset 5px;
 }
 
 body .userImgShape:hover {
-  background: #7CFFC4;
+  background: #eb5e28;
 }
 
 body .userImgShape::after {
   content: "";
   width: 150px;
   height: 40px;
-  background: #4a8374;
+  background: #32292f;
   position: absolute;
   top: 120px;
   left: -25px;
   border-radius: 100px 100px 0 0;
-  border: #BDFFFD inset 5px;
+  border: #e0e0ce inset 5px;
 }
 
 body .form {
@@ -98,7 +98,7 @@ body .form form label {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1em;
-  background: rgba(74, 131, 116, 0.9);
+  background: rgba(50, 41, 47, 0.9);
   border-radius: 10em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -108,21 +108,21 @@ body .form form label {
 }
 
 body .form form label:hover {
-  background: #4a8374;
+  background: #32292f;
 }
 
 body .form form input {
   text-align: center;
   border-style: unset;
-  color: #BDFFFD;
-  background: rgba(74, 131, 116, 0.9);
-  border: #BDFFFD inset 1px;
+  color: #e0e0ce;
+  background: rgba(50, 41, 47, 0.9);
+  border: #e0e0ce inset 1px;
   border-radius: 2em;
   padding: .2em;
 }
 
 body .form form input:last-child {
-  border: #BDFFFD inset 5px;
+  border: #e0e0ce inset 5px;
   padding: 0;
   height: 4em;
   width: 4em;
